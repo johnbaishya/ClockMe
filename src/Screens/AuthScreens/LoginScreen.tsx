@@ -20,7 +20,7 @@ const LoginScreen = ()=>{
                     setInputsState({loginEmail})
                 }}
                 placeholder="email"
-            />
+                />
              <TextInput
                 value={loginPassword}
                 onChangeText={(loginPassword)=>{

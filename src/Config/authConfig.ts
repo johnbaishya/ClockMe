@@ -5,7 +5,7 @@ import { setAppState } from '../Utils/storeFunctions';
 
 
 // to make the app authenticated by updating redux value and local storage
-export const authenticateApp = async(user:User)=>{
+export const authenticateApp = async(user:Partial<User>)=>{
     await storeLocalData(LocalStorageKey.user,user);
     setAppState({user,authenticated:true,appLoading:false});
 };

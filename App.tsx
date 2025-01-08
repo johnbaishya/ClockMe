@@ -22,6 +22,7 @@ import SplashScreen from './src/Screens/AuthScreens/SplashScreen';
 import {Provider} from "react-redux"; 
 import store from './src/Redux/store';
 import LoginScreen from './src/Screens/AuthScreens/LoginScreen';
+import Route from './src/Navigations/Route';
 
 
 
@@ -38,8 +39,7 @@ function App(): React.JSX.Element {
           barStyle={isDarkMode ? 'light-content' : 'dark-content'}
           backgroundColor={backgroundStyle.backgroundColor}
         />
-      {/* <SplashScreen/> */}
-      <LoginScreen/>
+      <Route/>
     </Provider>
   );
 }
