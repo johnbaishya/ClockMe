@@ -6,6 +6,7 @@ export type CustomThemePropTypeRoot = ThemeProp & MD2Colors & MD3Theme &{
         textLight:string,
         label:string,
         card:string,
+        text:string
     }
 };
 
